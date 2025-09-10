@@ -1211,7 +1211,7 @@ var Main = {
       currentPlan: null,
       isSupport: false,
       apihost: [
-        'https://code.spaceco.cc/host.php',
+        'https://001.orgcloud.cc/oss/host.php',
       ],
       apiLists: [],
       currentPage: 1,

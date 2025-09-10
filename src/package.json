@@ -1,14 +1,14 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "Demo For Windows",
+    "description": "CatBox For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
-	"apihost": "https://code.spaceco.cc/host.php",
+	"apihost": "https://001.orgcloud.cc/oss/host.php",
     "license": "Apache-2.0",
     "build": {
-        "productName": "Demo",
+        "productName": "Cat Box",
         "extraResources": [
             {
                 "from": "../libs/win32",
