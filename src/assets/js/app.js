@@ -1854,32 +1854,43 @@ var Main = {
       _0x56b281.discountCode = ''
       _0x56b281.Toast(_0x56b281['$t']('lang.CanceledUseOfCoupon'), 'warn')
     },
-    selectPlan(_0x2ec106, _0x13794d) {
-      const _0x479aac = this
-      _0x479aac.selectOderName = _0x2ec106.name
-      _0x479aac.selectedPlanID = _0x2ec106.id
-      _0x479aac.isShowPlanInfo = true
-      if (_0x2ec106 != null && _0x2ec106 != '') {
-        var _0x2de298 = []
-        _0x479aac.selectedPlanCycle = ''
-        _0x479aac.selectedPlans = []
-        var _0x38e19c = _0x479aac.v2bKeysToConsider
-        _0x479aac.panelType === 'v2board'
-          ? (_0x38e19c = _0x479aac.v2bKeysToConsider)
-          : (_0x38e19c = _0x479aac.xbKeysToConsider)
-        _0x38e19c.forEach((_0x5d314f) => {
-          _0x2ec106[_0x5d314f] !== null &&
-            _0x2ec106[_0x5d314f] !== undefined &&
-            (_0x2de298.push({
-              name: _0x5d314f,
-              price: _0x2ec106[_0x5d314f],
-            }),
-            _0x479aac.selectedPlanCycle === '' &&
-              (_0x479aac.selectedPlanCycle = _0x5d314f))
-        })
-        _0x479aac.selectedPlans = _0x2de298
-      }
-    },
+	selectPlan(_0x2ec106, _0x13794d) {
+	  const _0x479aac = this
+	  _0x479aac.selectOderName = _0x2ec106.name
+	  _0x479aac.selectedPlanID = _0x2ec106.id
+	  _0x479aac.isShowPlanInfo = true
+	  if (_0x2ec106 != null && _0x2ec106 != '') {
+		var _0x2de298 = []
+		_0x479aac.selectedPlanCycle = ''
+		_0x479aac.selectedPlans = []
+
+		const isXboard = _0x479aac.panelType === 'xboard'
+
+		var _0x38e19c = _0x479aac.v2bKeysToConsider
+		_0x479aac.panelType === 'v2board'
+		  ? (_0x38e19c = _0x479aac.v2bKeysToConsider)
+		  : (_0x38e19c = _0x479aac.xbKeysToConsider)
+
+		_0x38e19c.forEach((_0x5d314f) => {
+		  let priceValue;
+		  if (isXboard) {
+			priceValue = _0x2ec106.prices ? _0x2ec106.prices[_0x5d314f] : null;
+		  } else {
+			priceValue = _0x2ec106[_0x5d314f];
+		  }
+		  if (priceValue !== null && priceValue !== undefined) {
+			_0x2de298.push({
+			  name: _0x5d314f,
+			  price: priceValue,
+			});
+			if (_0x479aac.selectedPlanCycle === '') {
+			  _0x479aac.selectedPlanCycle = _0x5d314f;
+			}
+		  }
+		});
+		_0x479aac.selectedPlans = _0x2de298
+	  }
+	},
     select(_0x365ce7) {
       const _0x28c9a8 = this
       if (_0x28c9a8.isPay) {
