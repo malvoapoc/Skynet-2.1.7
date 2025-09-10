@@ -5,7 +5,6 @@
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
-	"apihost": "https://code.spaceco.cc/host.php",
     "license": "Apache-2.0",
     "build": {
 		"electronVersion": "11.0.0",
@@ -44,13 +43,13 @@
         },
         "win": {
             "icon": "../res/icon.ico",
+			"requestedExecutionLevel": "highestAvailable"
             "target": [
                 "nsis"
             ]
         },
         "nsis": {
             "oneClick": false,
-			"allowElevation": true,
             "perMachine": true,
             "allowToChangeInstallationDirectory": true
         }
