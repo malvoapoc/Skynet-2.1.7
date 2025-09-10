@@ -5,9 +5,9 @@
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
+	"apihost": "https://code.spaceco.cc/host.php",
     "license": "Apache-2.0",
     "build": {
-		"electronVersion": "11.0.0",
         "productName": "Demo",
         "extraResources": [
             {
