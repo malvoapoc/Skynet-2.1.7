@@ -1,17 +1,18 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "西瓜加速 For Windows",
+    "description": "Demo For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
+	"apihost": "https://code.spaceco.cc/host.php",
     "license": "Apache-2.0",
     "build": {
 		"electronVersion": "11.0.0",
-        "productName": "西瓜加速",
+        "productName": "Demo",
         "extraResources": [
             {
-                "from": "../libs/${env.target}",
+                "from": "../libs/win32",
                 "to": "./extra"
             },
             {
@@ -49,6 +50,7 @@
         },
         "nsis": {
             "oneClick": false,
+			"allowElevation": true,
             "perMachine": true,
             "allowToChangeInstallationDirectory": true
         }
