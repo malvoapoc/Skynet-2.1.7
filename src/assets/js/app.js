@@ -1211,7 +1211,7 @@ var Main = {
       currentPlan: null,
       isSupport: false,
       apihost: [
-        'https://skynet.grassmap.top/host.php',
+        'https://qosom.oss-cn-hongkong.aliyuncs.com/skynet/host.json',
       ],
       apiLists: [],
       currentPage: 1,
