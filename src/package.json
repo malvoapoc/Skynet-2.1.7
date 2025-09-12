@@ -1,14 +1,14 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "CatBox For Windows",
+    "description": "袋鼠加速器 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
-	"apihost": "https://001.orgcloud.cc/oss/host.php",
+	"apihost": "https://skynet.grassmap.top/host.php",
     "license": "Apache-2.0",
     "build": {
-        "productName": "Cat Box",
+        "productName": "袋鼠加速器",
         "extraResources": [
             {
                 "from": "../libs/win32",

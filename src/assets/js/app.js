@@ -1211,7 +1211,7 @@ var Main = {
       currentPlan: null,
       isSupport: false,
       apihost: [
-        'https://001.orgcloud.cc/oss/host.php',
+        'https://skynet.grassmap.top/host.php',
       ],
       apiLists: [],
       currentPage: 1,
