@@ -1211,7 +1211,9 @@ var Main = {
       currentPlan: null,
       isSupport: false,
       apihost: [
-        'https://qosom.oss-cn-hongkong.aliyuncs.com/skynet/host.json',
+        'https://gitee.com/wallyperry/moetor/raw/master/sky.json',
+		'https://gitcode.net/-/snippets/3193/raw/master/sky.json',
+		'https://moetor.oss-cn-hangzhou.aliyuncs.com/api/sky.json'
       ],
       apiLists: [],
       currentPage: 1,

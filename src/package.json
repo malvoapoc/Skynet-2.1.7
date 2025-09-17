@@ -1,14 +1,13 @@
 {
     "name": "Skynet",
     "version": "2.1.7",
-    "description": "千速喵TSMeow For Windows",
+    "description": "萌通加速 For Windows",
     "main": "src/main/main.js",
     "repository": "",
     "author": "",
-	"apihost": "https://qosom.oss-cn-hongkong.aliyuncs.com/skynet/host.json",
     "license": "Apache-2.0",
     "build": {
-        "productName": "千速喵TSMeow",
+        "productName": "萌通加速",
         "extraResources": [
             {
                 "from": "../libs/win32",
